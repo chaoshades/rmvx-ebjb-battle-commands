@@ -1,5 +1,5 @@
 # rmvx-ebjb-battle-commands
-Adds customizable battle commands to the EBJB Battle System.
+Adds customizable battle commands and auto-battle to the EBJB Battle System.
 
 ## Table of contents
 
