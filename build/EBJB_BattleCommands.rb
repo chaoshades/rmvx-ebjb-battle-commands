@@ -575,18 +575,20 @@ module EBJB
       1 => [],
       2 => [],
       3 => [],
-      4 => []
+      4 => [LearningBattleCommand.new(BC_GUARD,10)]
     }
+    CLASS_BATTLE_COMMANDS_LEARNINGS.default = []
     
     # Actor Battle Commands Settings
     #   syntax: actor_id => ['type', ...]
     #   Where 'type' is one of the Battle commands above
     ACTOR_BATTLE_COMMANDS = {
       1 => DEFAULT_BATTLE_COMMANDS,
-      2 => DEFAULT_BATTLE_COMMANDS,
-      3 => DEFAULT_BATTLE_COMMANDS,
-      4 => DEFAULT_BATTLE_COMMANDS
+      2 => [BC_ATTACK, BC_GUARD, BC_SKILL, BC_ITEM],
+      3 => [BC_SKILL, BC_GUARD, BC_ITEM, BC_ATTACK],
+      4 => [BC_SKILL, BC_ITEM, BC_ATTACK],
     }
+    ACTOR_BATTLE_COMMANDS.default = DEFAULT_BATTLE_COMMANDS
   
   end
 
